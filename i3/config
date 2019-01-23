@@ -180,7 +180,23 @@ bar {
 }
 
 # Start applications at boot
+# invisible
+# Tresorit sync
 exec --no-startup-id tresorit-cli start
+
+# Notifications
+exec --no-startup-id dunst
+
+# Composite manager
+exec --no-startup-id xcompmgr
+
+# Hide inactive mouse
+exec --no-startup-id unclutter
+
+# Set the background
+exec xwallpaper --center ~/.config/wall.png
+
+# visible
 exec plexmediaplayer
 exec slack
 exec simplenote
