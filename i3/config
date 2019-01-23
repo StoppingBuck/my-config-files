@@ -178,3 +178,10 @@ bindsym $mod+r mode "resize"
 bar {
         status_command i3status
 }
+
+# Start applications at boot
+exec --no-startup-id tresorit-cli start
+exec plexmediaplayer
+exec slack
+exec simplenote
+exec signal-desktop
